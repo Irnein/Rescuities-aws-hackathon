@@ -1,0 +1,50 @@
+RESCUTIES INFO
+APP ID: d2qsgh5bqbftjf
+url: https://main.d2qsgh5bqbftjf.amplifyapp.com/
+
+
+amplify.yml: 
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci --cache .npm --prefer-offline
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .npm/**/*
+
+branch/variable/value
+All branches	APP_ID	d2qsgh5bqbftjf
+All branches	VITE_AWS_ACCESS_KEY_ID	AKIA27ZEMUM6XCJG2WWL
+All branches	VITE_AWS_REGION	us-east-1
+All branches	VITE_AWS_SECRET_ACCESS_KEY	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
+All branches	VITE_GOOGLE_MAPS_API_KEY	AIzaSyBu-UNEa8eFFzyBNpFK5V1xn7vEIO28reA
+All branches	VITE_SNS_TOPIC_ARN	arn:aws:sns:us-east-1:755453698877:DisasterAlertsMY
+
+
+escuties
+App name
+rescuties
+
+Platform
+WEB
+Production branch URL
+https://main.d2qsgh5bqbftjf.amplifyapp.com
+
+App ARN
+arn:aws:amplify:us-east-1:755453698877:apps/d2qsgh5bqbftjf
+
+Created at
+9/20/2025, 11:20:07 PM
+Framework
+Web
+Updated at
+9/22/2025, 1:12:56 AM

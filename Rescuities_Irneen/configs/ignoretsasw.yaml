@@ -1,0 +1,2141 @@
+---
+Metadata:
+  AWSToolsMetrics:
+    IaC_Generator: "arn:aws:cloudformation:us-east-1:755453698877:generatedTemplate/4c6f3444-0fcd-48d3-8003-4d29b6a0ba16"
+Parameters:
+  LambdaFunctionKinesisToSNSCodeImageUribwKr3:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionRescutiesComprehendProcessorrCodeImageUriXYm3X:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionKinesisToSNSCodeZipFilerMNZ8:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionTwitterAPIProcessorCodeZipFile7GKPr:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionTwitterAPIProcessorCodeS3ObjectVersion8z08l:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionRescutiesComprehendProcessorrCodeS3ObjectVersion03hvw:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionRescutiesComprehendProcessorrCodeZipFilecHnkh:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionKinesisToSNSCodeS3KeyAEFnF:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionTwitterAPIProcessorCodeImageUrixWkfm:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionKinesisToSNSCodeS3BucketAJSrk:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionTwitterAPIProcessorCodeS3Bucket7MYjv:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  KeyName:
+    Default: "key-pair-1"
+    Type: "String"
+    Description: "Name of an existing EC2 KeyPair to enable SSH access"
+  LambdaFunctionKinesisToSNSCodeS3ObjectVersioneMhVr:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionRescutiesComprehendProcessorrCodeS3BucketQgQtY:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionTwitterAPIProcessorCodeS3Key6DHkC:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionRescutiesComprehendProcessorrCodeS3KeyXrUK1:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+Resources:
+  LogsLogStream20250920LATEST2de126e0dbbc40ce8323415ae71b69dd:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]2de126e0dbbc40ce8323415ae71b69dd"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  IAMRoleAWSServiceRoleForCloudFormationStackSetsOrgMember:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/member.org.stacksets.cloudformation.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/CloudFormationStackSetsOrgMemberServiceRolePolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForCloudFormationStackSetsOrgMember"
+      Description: "Service linked role for CloudFormation StackSets (Organization\
+        \ Member)"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "member.org.stacksets.cloudformation.amazonaws.com"
+  IAMManagedPolicyPolicyserviceroleAWSLambdaBasicExecutionRolec9834a5e4dc540e7ba73540237150d15:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::ManagedPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      ManagedPolicyName: "AWSLambdaBasicExecutionRole-c9834a5e-4dc5-40e7-ba73-540237150d15"
+      Path: "/service-role/"
+      Description: ""
+      Groups: []
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Resource: "arn:aws:logs:us-east-1:755453698877:*"
+          Action: "logs:CreateLogGroup"
+          Effect: "Allow"
+        - Resource:
+          - "arn:aws:logs:us-east-1:755453698877:log-group:/aws/lambda/RescutiesComprehendProcessorr:*"
+          Action:
+          - "logs:CreateLogStream"
+          - "logs:PutLogEvents"
+          Effect: "Allow"
+      Roles:
+      - Ref: "IAMRoleRescutiesComprehendProcessorrrolef4f2vf3u"
+      Users: []
+  LogsLogStream20250920LATESTeadcb0822e7c4a8d80288b189018273d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]eadcb0822e7c4a8d80288b189018273d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250922LATEST52bbc0afb0db4b4b8bbb6681a2dec1a9:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/22/[$LATEST]52bbc0afb0db4b4b8bbb6681a2dec1a9"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LogsLogStream20250921LATEST9d73739bebdf43868a4059476ae6f551:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]9d73739bebdf43868a4059476ae6f551"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LogsLogStream20250920LATESTabdc8ac886a449c18541e6f924b040c4:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]abdc8ac886a449c18541e6f924b040c4"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  AmplifyBranchAppsd2qsgh5bqbftjfbranchesmain:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Amplify::Branch"
+    DeletionPolicy: "Retain"
+    Properties:
+      Backend: {}
+      AppId:
+        Fn::GetAtt:
+        - "AmplifyAppAppsd2qsgh5bqbftjf"
+        - "AppId"
+      EnablePullRequestPreview: false
+      EnableAutoBuild: true
+      EnablePerformanceMode: false
+      Stage: "PRODUCTION"
+      BranchName: "main"
+      Framework: "Web"
+  LogsLogStream20250920LATEST0019cf3038324c138c8578637d841995:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]0019cf3038324c138c8578637d841995"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST9d43597994b64a3881da9af84fd5c193:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]9d43597994b64a3881da9af84fd5c193"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST2d38c353feca4b0082c5504bdee50590:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]2d38c353feca4b0082c5504bdee50590"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  EC2Instance:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::Instance"
+    DeletionPolicy: "Retain"
+    Properties:
+      Tenancy: "default"
+      PrivateIpAddress: "172.31.18.81"
+      InstanceInitiatedShutdownBehavior: "stop"
+      BlockDeviceMappings:
+      - Ebs:
+          SnapshotId: "snap-0e8ae436bb016efb5"
+          VolumeType: "gp3"
+          Iops: 3000
+          VolumeSize: 8
+          Encrypted: false
+          DeleteOnTermination: true
+        DeviceName: "/dev/xvda"
+      PrivateDnsNameOptions:
+        EnableResourceNameDnsARecord: true
+        HostnameType: "ip-name"
+        EnableResourceNameDnsAAAARecord: false
+      IamInstanceProfile:
+        Ref: "IAMInstanceProfileEc2kinesisfullaccess"
+      SecurityGroupIds:
+      - "sg-0f59ea664b83f864f"
+      EbsOptimized: false
+      DisableApiTermination: false
+      SourceDestCheck: true
+      PlacementGroupName: ""
+      VpcId: "vpc-093d7de24eb709777"
+      State:
+        Code: "16"
+        Name: "running"
+      NetworkInterfaces:
+      - Ipv6Addresses: []
+        SecondaryPrivateIpAddressCount: 0
+        NetworkInterfaceId:
+          Ref: "EC2NetworkInterface"
+        DeviceIndex: "0"
+      ImageId: "ami-08982f1c5bf93d976"
+      InstanceType: "t2.micro"
+      Monitoring: false
+      Tags:
+      - Value: "instance-shell-script"
+        Key: "Name"
+      CreditSpecification:
+        CPUCredits: "standard"
+  LogsLogStream20250921LATEST6103c327511e497cbf27aca5eecbed50:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]6103c327511e497cbf27aca5eecbed50"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  LogsLogStream20250921LATEST9cbb15c085ed4ab1b2e14289dc8c59cd:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]9cbb15c085ed4ab1b2e14289dc8c59cd"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATESTa8358999afe04766a84529ffda014a0a:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]a8358999afe04766a84529ffda014a0a"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  SNSTopicDisasterAlertsMY:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::SNS::Topic"
+    DeletionPolicy: "Retain"
+    Properties:
+      FifoTopic: false
+      Subscription:
+      - Endpoint: "https://7a3d5d2e93ed.ngrok-free.app"
+        Protocol: "https"
+      - Endpoint: "irneenahmed917@gmail.com"
+        Protocol: "email"
+      - Endpoint: "fieqahfaisal3010@gmail.com"
+        Protocol: "email"
+      - Endpoint: "TP084978@mail.apu.edu.my"
+        Protocol: "email"
+      TracingConfig: "PassThrough"
+      ArchivePolicy: {}
+      TopicName: "DisasterAlertsMY"
+  LogsLogStream20250921LATESTdb2bb87d7c7649438b2d064848b1a6c8:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]db2bb87d7c7649438b2d064848b1a6c8"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  LogsLogStream20250920LATEST01e17771ddb54a76886b09b84a272504:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]01e17771ddb54a76886b09b84a272504"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST04a10f9bee9c4232b1a98308b1a338b9:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]04a10f9bee9c4232b1a98308b1a338b9"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATEST08a341dd2a40407ba04951447652ebed:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]08a341dd2a40407ba04951447652ebed"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  KMSKey:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::KMS::Key"
+    DeletionPolicy: "Retain"
+    Properties:
+      Origin: "AWS_KMS"
+      MultiRegion: false
+      Description: "Default key that protects my Lex channel data when no other key\
+        \ is defined"
+      KeyPolicy:
+        Version: "2012-10-17"
+        Statement:
+        - Condition:
+            StringEquals:
+              kms:ViaService: "lex.us-east-1.amazonaws.com"
+              kms:CallerAccount: "755453698877"
+          Resource: "*"
+          Action:
+          - "kms:Encrypt"
+          - "kms:Decrypt"
+          - "kms:ReEncrypt*"
+          - "kms:GenerateDataKey*"
+          - "kms:CreateGrant"
+          - "kms:DescribeKey"
+          Effect: "Allow"
+          Principal:
+            AWS: "*"
+          Sid: "Allow access through lex for all principals in the account that are\
+            \ authorized to use lex"
+        - Resource: "*"
+          Action:
+          - "kms:Describe*"
+          - "kms:Get*"
+          - "kms:List*"
+          - "kms:RevokeGrant"
+          Effect: "Allow"
+          Principal:
+            AWS: "arn:aws:iam::755453698877:root"
+          Sid: "Allow direct access to key metadata to the account"
+        Id: "auto-lex-1"
+      KeySpec: "SYMMETRIC_DEFAULT"
+      Enabled: true
+      EnableKeyRotation: true
+      KeyUsage: "ENCRYPT_DECRYPT"
+      Tags: []
+  LogsLogStream20250921LATESTb5b01bc2cf6a4e10af7970b511285460:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]b5b01bc2cf6a4e10af7970b511285460"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATEST2306b2ac034f44e4869053320e8c602e:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]2306b2ac034f44e4869053320e8c602e"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  IAMRoleAWSServiceRoleForLexV2BotsK3K4F1PWQIE:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/lexv2.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/AmazonLexV2BotPolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForLexV2Bots_K3K4F1PWQIE"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lexv2.amazonaws.com"
+  LogsLogStream20250921LATEST64ab37c4dba74d37ad494c199c6735f2:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]64ab37c4dba74d37ad494c199c6735f2"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LogsLogStream20250921LATEST36c0ef3e8211443c9d7a19e63ef761c9:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]36c0ef3e8211443c9d7a19e63ef761c9"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  EC2InternetGateway:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::InternetGateway"
+    DeletionPolicy: "Retain"
+    Properties:
+      Tags: []
+  LambdaFunctionTwitterAPIProcessor:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        S3ObjectVersion:
+          Ref: "LambdaFunctionTwitterAPIProcessorCodeS3ObjectVersion8z08l"
+        S3Bucket:
+          Ref: "LambdaFunctionTwitterAPIProcessorCodeS3Bucket7MYjv"
+        ZipFile:
+          Ref: "LambdaFunctionTwitterAPIProcessorCodeZipFile7GKPr"
+        ImageUri:
+          Ref: "LambdaFunctionTwitterAPIProcessorCodeImageUrixWkfm"
+        S3Key:
+          Ref: "LambdaFunctionTwitterAPIProcessorCodeS3Key6DHkC"
+      Role:
+        Fn::GetAtt:
+        - "IAMRoleTwitterAPIProcessorrolerrdyzl9f"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "twitter-API-Processor"
+      Runtime: "python3.13"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/twitter-API-Processor"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  EC2NetworkAcl:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::NetworkAcl"
+    DeletionPolicy: "Retain"
+    Properties:
+      VpcId: "vpc-093d7de24eb709777"
+      Tags: []
+  LogsLogStream20250920LATESTdb4eb16b31de4660830bfb6ce12d9eaa:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]db4eb16b31de4660830bfb6ce12d9eaa"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATEST451de6822a8b44739697a7903735e0fb:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]451de6822a8b44739697a7903735e0fb"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  LogsLogStream20250920LATEST18cc36dd91484494a0c86c3dc30d0335:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]18cc36dd91484494a0c86c3dc30d0335"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250922LATESTf1adda1bbda84029a6614accc128985d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/22/[$LATEST]f1adda1bbda84029a6614accc128985d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LogsLogStream20250920LATESTd7cbfb0b54f6482ca8f1e1d50eb9885f:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]d7cbfb0b54f6482ca8f1e1d50eb9885f"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  IAMRoleAWSReservedSSOawsisbIsbManagersPS6997695a7d17382a:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-reserved/sso.amazonaws.com/ap-southeast-1/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AdministratorAccess"
+      MaxSessionDuration: 43200
+      RoleName: "AWSReservedSSO_awsisb_IsbManagersPS_6997695a7d17382a"
+      Description: "Manager PermissionSet for the Innovation Sandbox on AWS solution"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Condition:
+            StringEquals:
+              SAML:aud: "https://signin.aws.amazon.com/saml"
+          Action:
+          - "sts:AssumeRoleWithSAML"
+          - "sts:TagSession"
+          Effect: "Allow"
+          Principal:
+            Federated: "arn:aws:iam::755453698877:saml-provider/AWSSSO_4051c0e218776e3b_DO_NOT_DELETE"
+  LogsLogStream20250920LATEST13b394f417284652bd81f4f9a7e15c33:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]13b394f417284652bd81f4f9a7e15c33"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST979f5b0aec1a4c41a6c701f1d995a254:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]979f5b0aec1a4c41a6c701f1d995a254"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250922LATESTd5d979274af048c7af0f559521dabd9e:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/22/[$LATEST]d5d979274af048c7af0f559521dabd9e"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  IAMRoleAWSServiceRoleForOrganizations:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/organizations.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/AWSOrganizationsServiceTrustPolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForOrganizations"
+      Description: "Service-linked role used by AWS Organizations to enable integration\
+        \ of other AWS services with Organizations."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "organizations.amazonaws.com"
+  S3StorageLens:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::StorageLens"
+    DeletionPolicy: "Retain"
+    Properties:
+      StorageLensConfiguration:
+        AccountLevel:
+          BucketLevel: {}
+        IsEnabled: true
+        Id: "default-account-dashboard"
+      Tags: []
+  LogsLogStream20250922LATEST6966c1708adf47468e97a3dcf2a18197:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/22/[$LATEST]6966c1708adf47468e97a3dcf2a18197"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  IAMRoleOrganizationAccountAccessRole:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AdministratorAccess"
+      MaxSessionDuration: 3600
+      RoleName: "OrganizationAccountAccessRole"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            AWS: "arn:aws:iam::717408097266:root"
+  IAMRoleAWSReservedSSOawsisbIsbAdminsPSc3ef0008663205d8:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-reserved/sso.amazonaws.com/ap-southeast-1/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AdministratorAccess"
+      MaxSessionDuration: 43200
+      RoleName: "AWSReservedSSO_awsisb_IsbAdminsPS_c3ef0008663205d8"
+      Description: "Admin PermissionSet for the Innovation Sandbox on AWS solution"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Condition:
+            StringEquals:
+              SAML:aud: "https://signin.aws.amazon.com/saml"
+          Action:
+          - "sts:AssumeRoleWithSAML"
+          - "sts:TagSession"
+          Effect: "Allow"
+          Principal:
+            Federated: "arn:aws:iam::755453698877:saml-provider/AWSSSO_4051c0e218776e3b_DO_NOT_DELETE"
+  LambdaEventSourceMappingN8:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::EventSourceMapping"
+    DeletionPolicy: "Retain"
+    Properties:
+      StartingPosition: "LATEST"
+      BatchSize: 100
+      MaximumRetryAttempts: -1
+      ParallelizationFactor: 1
+      Enabled: true
+      EventSourceArn:
+        Fn::GetAtt:
+        - "KinesisStreamNaturaldisastertweets"
+        - "Arn"
+      MetricsConfig:
+        Metrics: []
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionKinesisToSNS"
+        - "Arn"
+      TumblingWindowInSeconds: 0
+      BisectBatchOnFunctionError: false
+      MaximumRecordAgeInSeconds: -1
+      Tags: []
+      MaximumBatchingWindowInSeconds: 0
+  LogsLogStream20250920LATEST941ad15395b74fd5a88990fd85eda741:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]941ad15395b74fd5a88990fd85eda741"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LambdaFunctionRescutiesComprehendProcessorr:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        S3ObjectVersion:
+          Ref: "LambdaFunctionRescutiesComprehendProcessorrCodeS3ObjectVersion03hvw"
+        S3Bucket:
+          Ref: "LambdaFunctionRescutiesComprehendProcessorrCodeS3BucketQgQtY"
+        ZipFile:
+          Ref: "LambdaFunctionRescutiesComprehendProcessorrCodeZipFilecHnkh"
+        ImageUri:
+          Ref: "LambdaFunctionRescutiesComprehendProcessorrCodeImageUriXYm3X"
+        S3Key:
+          Ref: "LambdaFunctionRescutiesComprehendProcessorrCodeS3KeyXrUK1"
+      Role:
+        Fn::GetAtt:
+        - "IAMRoleRescutiesComprehendProcessorrrolef4f2vf3u"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "RescutiesComprehendProcessorr"
+      Runtime: "python3.13"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/RescutiesComprehendProcessorr"
+      RecursiveLoop: "Terminate"
+      Environment:
+        Variables:
+          SNS_TOPIC_ARN: "arn:aws:sns:us-east-1:533267329150:DisasterAlertsMY"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  LogsLogGroupawslambdaKinesisToSNS:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      FieldIndexPolicies: []
+      LogGroupClass: "STANDARD"
+      LogGroupName: "/aws/lambda/KinesisToSNS"
+      DataProtectionPolicy: {}
+  LogsLogStream20250921LATESTbad766a5fb38415cbb476d76314c6442:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]bad766a5fb38415cbb476d76314c6442"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  EC2RouteQF:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::Route"
+    DeletionPolicy: "Retain"
+    Properties:
+      RouteTableId: "rtb-01bfc706556368253"
+      DestinationCidrBlock: "172.31.0.0/16"
+      GatewayId: "local"
+      VpcEndpointId: "local"
+  IAMManagedPolicyPolicyserviceroleAWSLambdaBasicExecutionRole1a8313c271e348349f0c0ea240d5fb9a:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::ManagedPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      ManagedPolicyName: "AWSLambdaBasicExecutionRole-1a8313c2-71e3-4834-9f0c-0ea240d5fb9a"
+      Path: "/service-role/"
+      Description: ""
+      Groups: []
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Resource: "arn:aws:logs:us-east-1:755453698877:*"
+          Action: "logs:CreateLogGroup"
+          Effect: "Allow"
+        - Resource:
+          - "arn:aws:logs:us-east-1:755453698877:log-group:/aws/lambda/fetch-twitter-API:*"
+          Action:
+          - "logs:CreateLogStream"
+          - "logs:PutLogEvents"
+          Effect: "Allow"
+      Roles:
+      - Ref: "IAMRoleFetchtwitterAPIrolej028wgro"
+      Users: []
+  LogsLogStream20250921LATESTd9c8ff375f5f405996adefa9a3333da1:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]d9c8ff375f5f405996adefa9a3333da1"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  IAMRoleAWSServiceRoleForLexV2BotsRKQWX0BYA4:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/lexv2.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/AmazonLexV2BotPolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForLexV2Bots_RKQWX0BYA4"
+      Policies:
+      - PolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+          - Resource: "arn:aws:logs:*:755453698877:log-group:/aws/lex/BNY0UH2LV1:*"
+            Action:
+            - "logs:CreateLogStream"
+            - "logs:PutLogEvents"
+            - "logs:CreateLogGroup"
+            Effect: "Allow"
+            Sid: "CloudWatchLogPolicyID"
+        PolicyName: "AmazonLexServicePolicy-RKQWX0BYA4-LogCloudWatchPolicy"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lexv2.amazonaws.com"
+  LogsLogStream20250920LATESTc8d7c59d08e04cb2a81531e07d9ba2bc:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]c8d7c59d08e04cb2a81531e07d9ba2bc"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATEST895110e8ee2941b294768f424e895239:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]895110e8ee2941b294768f424e895239"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  S3BucketCftemplatesebkw3imqecp7useast1:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        BlockPublicAcls: true
+      BucketName: "cf-templates-ebkw3imqecp7-us-east-1"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: false
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  S3BucketCloudcutiesconversation:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: false
+        IgnorePublicAcls: false
+        BlockPublicPolicy: false
+        BlockPublicAcls: false
+      BucketName: "cloudcuties-conversation"
+      VersioningConfiguration:
+        Status: "Enabled"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  IAMRoleLambdakinesissnsrole:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+      - "arn:aws:iam::aws:policy/AmazonSNSFullAccess"
+      MaxSessionDuration: 3600
+      RoleName: "lambda-kinesis-sns-role"
+      Description: "Allows Lambda functions to call AWS services on your behalf."
+      Policies:
+      - PolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+          - Resource: "arn:aws:logs:*:*:*"
+            Action:
+            - "logs:CreateLogGroup"
+            - "logs:CreateLogStream"
+            - "logs:PutLogEvents"
+            Effect: "Allow"
+            Sid: "CloudWatchLogs"
+          - Resource:
+            - "arn:aws:sns:us-east-1:755453698877:DisasterAlertsMY"
+            - "arn:aws:sns:us-east-1:755453698877:*"
+            Action:
+            - "sns:Publish"
+            Effect: "Allow"
+            Sid: "PublishToSNS"
+          - Resource: "*"
+            Action:
+            - "comprehend:DetectSentiment"
+            - "comprehend:DetectEntities"
+            - "comprehend:DetectKeyPhrases"
+            - "comprehend:DetectPiiEntities"
+            Effect: "Allow"
+            Sid: "ComprehendCalls"
+          - Resource: "*"
+            Action:
+            - "bedrock:InvokeModel"
+            Effect: "Allow"
+            Sid: "BedrockInvoke"
+          - Resource: "arn:aws:kinesis:us-east-1:755453698877:stream/*"
+            Action:
+            - "kinesis:DescribeStream"
+            - "kinesis:GetShardIterator"
+            - "kinesis:GetRecords"
+            - "kinesis:ListShards"
+            Effect: "Allow"
+            Sid: "KinesisOptional"
+        PolicyName: "LambdaKinesisSNSPolicy"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  IAMRoleAWSReservedSSOawsisbIsbUsersPSdae82913d4d98dde:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-reserved/sso.amazonaws.com/ap-southeast-1/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AdministratorAccess"
+      MaxSessionDuration: 43200
+      RoleName: "AWSReservedSSO_awsisb_IsbUsersPS_dae82913d4d98dde"
+      Description: "User PermissionSet for the Innovation Sandbox on AWS solution"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Condition:
+            StringEquals:
+              SAML:aud: "https://signin.aws.amazon.com/saml"
+          Action:
+          - "sts:AssumeRoleWithSAML"
+          - "sts:TagSession"
+          Effect: "Allow"
+          Principal:
+            Federated: "arn:aws:iam::755453698877:saml-provider/AWSSSO_4051c0e218776e3b_DO_NOT_DELETE"
+  LogsLogStream20250921LATEST16344f475b3d4b65a48c438cbf96859d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]16344f475b3d4b65a48c438cbf96859d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250923LATESTce0f96569a3c49349e41d845b83934e5:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/23/[$LATEST]ce0f96569a3c49349e41d845b83934e5"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  IAMRoleAWSServiceRoleForSSO:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/sso.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/AWSSSOServiceRolePolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForSSO"
+      Description: "Service-linked role used by AWS SSO to manage AWS resources, including\
+        \ IAM roles, policies and SAML IdP on your behalf."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "sso.amazonaws.com"
+  LogsLogStream20250920LATESTc0ceb26d7add4a228de7f52847c98507:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]c0ceb26d7add4a228de7f52847c98507"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST8e6afd2fe14046538f6319f839422957:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]8e6afd2fe14046538f6319f839422957"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATEST392ebf42685b49fe8050bed5f594dbcd:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]392ebf42685b49fe8050bed5f594dbcd"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LogsLogStream20250920LATEST64f19d20b8ab43ad96d7624d60a48147:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]64f19d20b8ab43ad96d7624d60a48147"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  KinesisStreamNaturaldisastertweets:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Kinesis::Stream"
+    DeletionPolicy: "Retain"
+    Properties:
+      StreamModeDetails:
+        StreamMode: "ON_DEMAND"
+      RetentionPeriodHours: 24
+      DesiredShardLevelMetrics:
+      - "IncomingBytes"
+      - "OutgoingRecords"
+      - "IteratorAgeMilliseconds"
+      - "IncomingRecords"
+      - "ReadProvisionedThroughputExceeded"
+      - "WriteProvisionedThroughputExceeded"
+      - "OutgoingBytes"
+      Name: "natural-disaster-tweets"
+      ShardCount: 4
+  LogsLogStream20250921LATEST0c861ab390e54690aebe77598866a11d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]0c861ab390e54690aebe77598866a11d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LogsLogStream20250920LATESTb5d8a6da952f4c728cfc9d35a9bbadca:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]b5d8a6da952f4c728cfc9d35a9bbadca"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogGroupawslambdatwitterAPIProcessor:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      FieldIndexPolicies: []
+      LogGroupClass: "STANDARD"
+      LogGroupName: "/aws/lambda/twitter-API-Processor"
+      DataProtectionPolicy: {}
+  LambdaPermissionFunctiontwitterAPIProcessor:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionTwitterAPIProcessor"
+        - "Arn"
+      Action: "lambda:AddPermission"
+      Principal:
+        Fn::GetAtt:
+        - "IAMRoleTwitterAPIProcessorrolerrdyzl9f"
+        - "Arn"
+  EC2KeyPairMykeypair:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::KeyPair"
+    DeletionPolicy: "Retain"
+    Properties:
+      KeyName: "my-key-pair"
+      KeyType: "rsa"
+      PublicKeyMaterial: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXyNwJz8AC0xEzJDZIoaBeCkKU7vHdTRy/IdmM9CheZfXIVMdDKxuNeU2D8C2ZbNVcE3w33hEXmzdJkx5IDEfB9HqheAo2/tK0QKAmExV7IaPSie4O9l4ZLS6D/puQN3BiVLnvuLbCaUqC+JhnZV4rQ2TdkeN8lzTCeT0xCwXQuzcYqZNXKquruyLv8GvJ7hUnO6jt5MroPvh6rEWCcDcKQudFbBd6rOASk0mUCpxk9ky9NLLjkeJftf+R1WoYYtI0kSKSGb/NmkRS/IhQf3veFYaDsQwUqOdT/1NM6HO6gMipPrej5G42I7FaOUhzkT8es8FjuYPP6Ux/7yee2EI1\
+        \ my-key-pair\n"
+      Tags: []
+  IAMRoleEc2kinesisfullaccess:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AmazonKinesisFullAccess"
+      MaxSessionDuration: 3600
+      RoleName: "ec2-kinesis-full-access"
+      Description: "Allows EC2 instances to call AWS services on your behalf."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "ec2.amazonaws.com"
+  IAMManagedPolicyPolicyserviceroleAWSLambdaBasicExecutionRole27ba506d004941fe80aad5bf34c66d52:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::ManagedPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      ManagedPolicyName: "AWSLambdaBasicExecutionRole-27ba506d-0049-41fe-80aa-d5bf34c66d52"
+      Path: "/service-role/"
+      Description: ""
+      Groups: []
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Resource: "arn:aws:logs:us-east-1:755453698877:*"
+          Action: "logs:CreateLogGroup"
+          Effect: "Allow"
+        - Resource:
+          - "arn:aws:logs:us-east-1:755453698877:log-group:/aws/lambda/KinesisToSNS:*"
+          Action:
+          - "logs:CreateLogStream"
+          - "logs:PutLogEvents"
+          Effect: "Allow"
+      Roles: []
+      Users: []
+  LogsLogStream20250921LATEST056beeaa8bfb42debab23c503cb37e6e:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]056beeaa8bfb42debab23c503cb37e6e"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  XRayGroupGroupDefault:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::XRay::Group"
+    DeletionPolicy: "Retain"
+    Properties:
+      GroupName: "Default"
+      InsightsConfiguration:
+        InsightsEnabled: false
+        NotificationsEnabled: false
+      Tags: []
+  IAMRoleAWSServiceRoleForLexV2BotsJVSTTMCHBDD:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/lexv2.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/AmazonLexV2BotPolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForLexV2Bots_JVSTTMCHBDD"
+      Policies:
+      - PolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+          - Resource: "arn:aws:logs:*:755453698877:log-group:/aws/lex/YFU30YMTV4:*"
+            Action:
+            - "logs:CreateLogStream"
+            - "logs:PutLogEvents"
+            - "logs:CreateLogGroup"
+            Effect: "Allow"
+            Sid: "CloudWatchLogPolicyID"
+        PolicyName: "AmazonLexServicePolicy-JVSTTMCHBDD-LogCloudWatchPolicy"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lexv2.amazonaws.com"
+  IAMRoleAWSServiceRoleForCloudTrail:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/cloudtrail.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/CloudTrailServiceRolePolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForCloudTrail"
+      Description: "This service-linked role is used for supporting organization trail\
+        \ feature"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "cloudtrail.amazonaws.com"
+  IAMUserRescutiessnsuser:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::User"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AWSCompromisedKeyQuarantineV3"
+      - "arn:aws:iam::aws:policy/AmazonCloudWatchEvidentlyFullAccess"
+      - "arn:aws:iam::aws:policy/AmazonSNSFullAccess"
+      - "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+      - "arn:aws:iam::aws:policy/AmazonCloudWatchRUMFullAccess"
+      - "arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+      - "arn:aws:iam::aws:policy/AmazonKinesisFullAccess"
+      Policies:
+      - PolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+          - Resource: "*"
+            Action:
+            - "s3:ListAccessPointsForObjectLambda"
+            - "s3:GetAccessPoint"
+            - "s3:PutAccountPublicAccessBlock"
+            - "s3:ListAccessPoints"
+            - "s3:CreateStorageLensGroup"
+            - "s3:ListJobs"
+            - "s3:PutStorageLensConfiguration"
+            - "s3:ListMultiRegionAccessPoints"
+            - "s3:ListStorageLensGroups"
+            - "s3:ListStorageLensConfigurations"
+            - "s3:GetAccountPublicAccessBlock"
+            - "s3:ListAllMyBuckets"
+            - "s3:ListAccessGrantsInstances"
+            - "s3:PutAccessPointPublicAccessBlock"
+            - "s3:CreateJob"
+            Effect: "Allow"
+            Sid: "VisualEditor0"
+          - Resource: "arn:aws:s3:::*"
+            Action:
+            - "s3:GetObject"
+            - "s3:*"
+            - "s3:ListBucket"
+            Effect: "Allow"
+            Sid: "VisualEditor1"
+        PolicyName: "S3BucketFullPermission"
+      UserName: "rescuties-sns-user"
+      Tags:
+      - Value: "SNS Topic subscription"
+        Key: "AKIA27ZEMUM6XCJG2WWL"
+  LogsLogStream20250920LATESTc6ac9cf528674943b5d87cab9ad58caf:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]c6ac9cf528674943b5d87cab9ad58caf"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATESTd2f943041d8e4de49feb7370f5c35acd:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]d2f943041d8e4de49feb7370f5c35acd"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LogsLogStream20250921LATEST9da0ff3696984b30a51de71c234564ef:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]9da0ff3696984b30a51de71c234564ef"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LogsLogStream20250922LATEST37584a6f978d413180fef6d453106d36:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/22/[$LATEST]37584a6f978d413180fef6d453106d36"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  IAMRoleAWSServiceRoleForAPIGateway:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/ops.apigateway.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/APIGatewayServiceRolePolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForAPIGateway"
+      Description: "The Service Linked Role is used by Amazon API Gateway."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "ops.apigateway.amazonaws.com"
+  LogsLogStream20250920LATEST8196e19c2a74483a91941f3a5753d127:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]8196e19c2a74483a91941f3a5753d127"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LambdaEventSourceMapping:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::EventSourceMapping"
+    DeletionPolicy: "Retain"
+    Properties:
+      StartingPosition: "TRIM_HORIZON"
+      BatchSize: 1
+      MaximumRetryAttempts: -1
+      ParallelizationFactor: 1
+      Enabled: true
+      EventSourceArn:
+        Fn::GetAtt:
+        - "KinesisStreamNaturaldisastertweets"
+        - "Arn"
+      MetricsConfig:
+        Metrics: []
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionTwitterAPIProcessor"
+        - "Arn"
+      TumblingWindowInSeconds: 0
+      BisectBatchOnFunctionError: false
+      MaximumRecordAgeInSeconds: -1
+      Tags: []
+      MaximumBatchingWindowInSeconds: 0
+  EC2DHCPOptions:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::DHCPOptions"
+    DeletionPolicy: "Retain"
+    Properties:
+      DomainName: "ec2.internal"
+      DomainNameServers:
+      - "AmazonProvidedDNS"
+      Tags: []
+  EC2Route:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::Route"
+    DeletionPolicy: "Retain"
+    Properties:
+      RouteTableId: "rtb-01bfc706556368253"
+      DestinationCidrBlock: "0.0.0.0/0"
+      GatewayId:
+        Ref: "EC2InternetGateway"
+      VpcEndpointId: "igw-036569a3a6c3e7a9f"
+  IAMRoleAWSServiceRoleForTrustedAdvisor:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/trustedadvisor.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorServiceRolePolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForTrustedAdvisor"
+      Description: "Access for the AWS Trusted Advisor Service to help reduce cost,\
+        \ increase performance, and improve security of your AWS environment."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "trustedadvisor.amazonaws.com"
+  LogsLogStream20250920LATEST9e1a7c04075f417f83a28827c4cd3e2c:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]9e1a7c04075f417f83a28827c4cd3e2c"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  EC2NetworkInterfaceAttachment:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::NetworkInterfaceAttachment"
+    DeletionPolicy: "Retain"
+    Properties:
+      NetworkInterfaceId: "eni-0d0e0283a271defaf"
+      InstanceId: "i-082490d48b4cb6639"
+      DeviceIndex: "0"
+      DeleteOnTermination: true
+  LogsLogStream20250922LATESTd30cd7dde118433583271b7f8e000ec0:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/22/[$LATEST]d30cd7dde118433583271b7f8e000ec0"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  IAMRoleRescutiesComprehendProcessorrrolef4f2vf3u:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AmazonBedrockFullAccess"
+      - "arn:aws:iam::aws:policy/AmazonSNSFullAccess"
+      - "arn:aws:iam::755453698877:policy/service-role/AWSLambdaBasicExecutionRole-c9834a5e-4dc5-40e7-ba73-540237150d15"
+      - "arn:aws:iam::aws:policy/ComprehendFullAccess"
+      MaxSessionDuration: 3600
+      RoleName: "RescutiesComprehendProcessorr-role-f4f2vf3u"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  LogsLogStream20250921LATEST659bac03f89e426bb8f622c3977b8a82:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]659bac03f89e426bb8f622c3977b8a82"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  EC2NetworkInterface:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::NetworkInterface"
+    DeletionPolicy: "Retain"
+    Properties:
+      Description: ""
+      PrivateIpAddress: "172.31.18.81"
+      SecondaryPrivateIpAddressCount: 0
+      Ipv6PrefixCount: 0
+      Ipv4Prefixes: []
+      Ipv4PrefixCount: 0
+      GroupSet:
+      - "sg-0f59ea664b83f864f"
+      Ipv6Prefixes: []
+      SubnetId: "subnet-080036fdcbfdda42c"
+      SourceDestCheck: true
+      InterfaceType: "interface"
+      Tags: []
+      PublicIpDnsNameOptions:
+        DnsHostnameType: "public-ipv4-dns-name"
+        PublicIpv4DnsName: "ec2-54-146-98-236.compute-1.amazonaws.com"
+  IAMRoleRescutiesComprehendProcessorroleejh8fm2f:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AmazonBedrockFullAccess"
+      - "arn:aws:iam::aws:policy/AmazonSNSFullAccess"
+      - "arn:aws:iam::755453698877:policy/service-role/AWSLambdaBasicExecutionRole-5465bfac-61b7-4778-94e4-f1b7fddc00a3"
+      - "arn:aws:iam::aws:policy/ComprehendFullAccess"
+      MaxSessionDuration: 3600
+      RoleName: "RescutiesComprehendProcessor-role-ejh8fm2f"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  LogsLogStream20250920LATESTde281f30188f40dbb2e45bbf892d349d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]de281f30188f40dbb2e45bbf892d349d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATEST9f637591e53145e9a0618a6dc07d59f4:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]9f637591e53145e9a0618a6dc07d59f4"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  LogsLogStream20250920LATESTe43e6ac1f91f489ea51807ff9d21072e:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]e43e6ac1f91f489ea51807ff9d21072e"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST808d360e087b41d5a572e631b75eaa2f:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]808d360e087b41d5a572e631b75eaa2f"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LambdaPermissionFunctionRescutiesComprehendProcessorr:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionRescutiesComprehendProcessorr"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn:
+        Fn::GetAtt:
+        - "S3BucketCloudcutiestweetbucket"
+        - "Arn"
+      Principal: "s3.amazonaws.com"
+      SourceAccount: "755453698877"
+  EC2KeyPairKeypair1:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::KeyPair"
+    DeletionPolicy: "Retain"
+    Properties:
+      KeyName: "key-pair-1"
+      KeyType: "rsa"
+      PublicKeyMaterial: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEQHCLL2qDP5l4UMo7z2Y6JhA4LcT9fN5n7CyONISMJ9C5sx5OgqjG4KGwPwqmyTnJUD0huwwvJlfMjPKZXa9Q/ffd9XclABjH+aF2St1qQpXLnVSdqz+rylj4bSxeKePeoAftmvbaOWZhCuBRBFAb9Roq8Mq+IIY1rrjmsEUnJYJeKP2KbPx2JyFczFL7U/EJ57QJqNdsgTHZ0TNsxZLAjd82fmcx+Rom7ibTV8Z/PNLx8AQM5jhwpOtqwG8fopo8sAQawmWVUjXRjVQTR+eWgzuHzwbjq4PVRi4iKcprztBrC89VirJAvrtUMsUL4sg6zEU/KoaHjFGl7+tpr23n\
+        \ key-pair-1\n"
+      Tags: []
+  LogsLogStream20250922LATEST25b89136c6454faeb854f1765011a225:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/22/[$LATEST]25b89136c6454faeb854f1765011a225"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  LogsLogStream20250920LATESTc82b3b04783c4f94a927bcaabf6ebabc:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]c82b3b04783c4f94a927bcaabf6ebabc"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  S3BucketCloudcutiestweetbucket:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: false
+        IgnorePublicAcls: false
+        BlockPublicPolicy: false
+        BlockPublicAcls: false
+      BucketName: "cloud-cuties-tweet-bucket"
+      CorsConfiguration:
+        CorsRules:
+        - AllowedHeaders:
+          - "*"
+          AllowedMethods:
+          - "GET"
+          - "HEAD"
+          AllowedOrigins:
+          - "*"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+      NotificationConfiguration:
+        QueueConfigurations: []
+        TopicConfigurations: []
+        LambdaConfigurations:
+        - Function:
+            Fn::GetAtt:
+            - "LambdaFunctionRescutiesComprehendProcessorr"
+            - "Arn"
+          Filter:
+            S3Key:
+              Rules:
+              - Value: "tweets/"
+                Name: "Prefix"
+              - Value: ".json"
+                Name: "Suffix"
+          Event: "s3:ObjectCreated:Put"
+      WebsiteConfiguration:
+        IndexDocument: "Home.tsx"
+  LogsLogStream20250921LATEST66aeb04d66d74014b45607ec71e34df7:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]66aeb04d66d74014b45607ec71e34df7"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  IAMManagedPolicyPolicyserviceroleAWSLambdaBasicExecutionRolef88d156afc374c9698bbef5466b450c8:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::ManagedPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      ManagedPolicyName: "AWSLambdaBasicExecutionRole-f88d156a-fc37-4c96-98bb-ef5466b450c8"
+      Path: "/service-role/"
+      Description: ""
+      Groups: []
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Resource: "arn:aws:logs:us-east-1:755453698877:*"
+          Action: "logs:CreateLogGroup"
+          Effect: "Allow"
+        - Resource:
+          - "arn:aws:logs:us-east-1:755453698877:log-group:/aws/lambda/twitter-API-Processor:*"
+          Action:
+          - "logs:CreateLogStream"
+          - "logs:PutLogEvents"
+          Effect: "Allow"
+      Roles: []
+      Users: []
+  EC2KeyPairEc2kinesisdatastreamkeypair:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::KeyPair"
+    DeletionPolicy: "Retain"
+    Properties:
+      KeyName: "ec2-kinesis-datastream-keypair"
+      KeyType: "rsa"
+      PublicKeyMaterial: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDUci+Ek3tL8K3bjJWGkSkJ0D3OB6FtCsxcr3oi5kwvbGlw55zxNBBWpww8wZitE4VCj3vBj011qnsxsB/ij9HewsSbxrquy2wW+0oKx2QZn2smOR9HdcJXFbTu+mOJy0LnC1l0TAtsAoO4mlBzJua2lbPj3XKgPL1K88jiu8+86O2axZ92rnVH2Ut+vztWl/inPBjIHC7PsRpkAaFRC3r7Y9XG5tBHtOU4sTHq9jWJcvCIGiYTcxcclxYyHaTIlem4LrnUGoO6On2UwfNVgQvIM0C3XiFEGVse4IFc7Hhq/3KgTuT60jiV70EQ6gHjDAiVqAaQr7upDPjc2hKN1s7\
+        \ ec2-kinesis-datastream-keypair\n"
+      Tags: []
+  LogsLogStream20250920LATESTba6a731a6e3d4d639efc3c4f403abf34:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]ba6a731a6e3d4d639efc3c4f403abf34"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST73b4f36db7e84e43ba3151b9349da4f0:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]73b4f36db7e84e43ba3151b9349da4f0"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogGroupawslambdaRescutiesComprehendProcessorr:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      FieldIndexPolicies: []
+      LogGroupClass: "STANDARD"
+      LogGroupName: "/aws/lambda/RescutiesComprehendProcessorr"
+      DataProtectionPolicy: {}
+  IAMRoleAWSServiceRoleForLexV2BotsHSBVD0URN4:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/lexv2.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/AmazonLexV2BotPolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForLexV2Bots_HSBVD0URN4"
+      Policies:
+      - PolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+          - Resource: "arn:aws:logs:*:755453698877:log-group:/aws/lex/L7KCW1FZ6D:*"
+            Action:
+            - "logs:CreateLogStream"
+            - "logs:PutLogEvents"
+            - "logs:CreateLogGroup"
+            Effect: "Allow"
+            Sid: "CloudWatchLogPolicyID"
+        PolicyName: "AmazonLexServicePolicy-HSBVD0URN4-LogCloudWatchPolicy"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lexv2.amazonaws.com"
+  IAMManagedPolicyPolicyserviceroleAWSLambdaBasicExecutionRole5465bfac61b7477894e4f1b7fddc00a3:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::ManagedPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      ManagedPolicyName: "AWSLambdaBasicExecutionRole-5465bfac-61b7-4778-94e4-f1b7fddc00a3"
+      Path: "/service-role/"
+      Description: ""
+      Groups: []
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Resource: "arn:aws:logs:ap-southeast-1:755453698877:*"
+          Action: "logs:CreateLogGroup"
+          Effect: "Allow"
+        - Resource:
+          - "arn:aws:logs:ap-southeast-1:755453698877:log-group:/aws/lambda/RescutiesComprehendProcessor:*"
+          Action:
+          - "logs:CreateLogStream"
+          - "logs:PutLogEvents"
+          Effect: "Allow"
+      Roles:
+      - Ref: "IAMRoleRescutiesComprehendProcessorroleejh8fm2f"
+      Users: []
+  LogsLogStream20250920LATEST3117a5aa8ef9440a890c7b57dfd58ac1:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]3117a5aa8ef9440a890c7b57dfd58ac1"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST5bf5f9757a0e478e941c97a13327863a:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]5bf5f9757a0e478e941c97a13327863a"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST3c839cec1a314d1cb930607852369848:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]3c839cec1a314d1cb930607852369848"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  IAMRoleTwitterAPIProcessorrolerrdyzl9f:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+      - "arn:aws:iam::aws:policy/AWSLambda_FullAccess"
+      MaxSessionDuration: 3600
+      RoleName: "twitter-API-Processor-role-rrdyzl9f"
+      Policies:
+      - PolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+          - Resource: "arn:aws:kinesis:*:*:stream/natural-disaster-tweets"
+            Action:
+            - "kinesis:DescribeStream"
+            - "kinesis:GetShardIterator"
+            - "kinesis:GetRecords"
+            - "kinesis:DescribeStream"
+            - "kinesis:DescribeStreamSummary"
+            - "kinesis:ListShards"
+            - "kinesis:ListStreams"
+            Effect: "Allow"
+          - Resource: "arn:aws:s3:::cloud-cuties-tweet-bucket/*"
+            Action:
+            - "s3:PutObject"
+            - "s3:GetObject"
+            Effect: "Allow"
+          - Resource: "*"
+            Action:
+            - "logs:CreateLogGroup"
+            - "logs:CreateLogStream"
+            - "logs:PutLogEvents"
+            Effect: "Allow"
+        PolicyName: "APIProcessorTrigger"
+      - PolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+          - Resource:
+            - "*"
+            Action:
+            - "s3:*"
+            Effect: "Allow"
+            Sid: "Statement1"
+        PolicyName: "S3BucketTrigger"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service:
+            - "lakeformation.amazonaws.com"
+            - "events.amazonaws.com"
+            - "dms.amazonaws.com"
+            - "transfer.amazonaws.com"
+            - "rds.amazonaws.com"
+            - "logs.amazonaws.com"
+            - "textract.amazonaws.com"
+            - "delivery.logs.amazonaws.com"
+            - "glue.amazonaws.com"
+            - "datapipeline.amazonaws.com"
+            - "lambda.amazonaws.com"
+  LogsLogStream20250921LATESTf19090f0180943bd96cf0852a2ce622c:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]f19090f0180943bd96cf0852a2ce622c"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATEST9deb791ef38445a6b4318b39554c8867:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]9deb791ef38445a6b4318b39554c8867"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  LogsLogStream20250921LATEST4e01eeede28c4f3db2dc376cf439cea0:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]4e01eeede28c4f3db2dc376cf439cea0"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  IAMInstanceProfileEc2kinesisfullaccess:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::InstanceProfile"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      Roles:
+      - Ref: "IAMRoleEc2kinesisfullaccess"
+      InstanceProfileName:
+        Ref: "IAMRoleEc2kinesisfullaccess"
+  LogsLogStream20250920LATESTe9d5c907bb2447b19a76c0f1badce670:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]e9d5c907bb2447b19a76c0f1badce670"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  IAMRoleFetchtwitterAPIrolej028wgro:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::755453698877:policy/service-role/AWSLambdaBasicExecutionRole-1a8313c2-71e3-4834-9f0c-0ea240d5fb9a"
+      - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+      MaxSessionDuration: 3600
+      RoleName: "fetch-twitter-API-role-j028wgro"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  LogsLogStream20250920LATESTf8fd5edbad3349e5b11ebeb7eb3a61cb:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]f8fd5edbad3349e5b11ebeb7eb3a61cb"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATESTa4ed067ba6b5486a9aebdee5435bc862:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]a4ed067ba6b5486a9aebdee5435bc862"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  KMSKeyWK:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::KMS::Key"
+    DeletionPolicy: "Retain"
+    Properties:
+      Origin: "AWS_KMS"
+      MultiRegion: false
+      Description: "Default key that protects my SNS data when no other key is defined"
+      KeyPolicy:
+        Version: "2012-10-17"
+        Statement:
+        - Condition:
+            StringEquals:
+              kms:CallerAccount: "755453698877"
+              kms:ViaService: "sns.us-east-1.amazonaws.com"
+          Resource: "*"
+          Action:
+          - "kms:Decrypt"
+          - "kms:GenerateDataKey*"
+          - "kms:CreateGrant"
+          - "kms:ListGrants"
+          - "kms:DescribeKey"
+          Effect: "Allow"
+          Principal:
+            AWS: "*"
+          Sid: "Allow access through SNS for all principals in the account that are\
+            \ authorized to use SNS"
+        - Resource: "*"
+          Action:
+          - "kms:Describe*"
+          - "kms:Get*"
+          - "kms:List*"
+          - "kms:RevokeGrant"
+          Effect: "Allow"
+          Principal:
+            AWS: "arn:aws:iam::755453698877:root"
+          Sid: "Allow direct access to key metadata to the account"
+        - Condition:
+            StringEquals:
+              aws:SourceAccount: "755453698877"
+            ArnLike:
+              aws:SourceArn: "arn:*:sns:us-east-1:755453698877:*"
+          Resource: "*"
+          Action: "kms:Decrypt"
+          Effect: "Allow"
+          Principal:
+            Service: "sns.amazonaws.com"
+          Sid: "Allow SNS to decrypt archived messages"
+        Id: "auto-sns-2"
+      KeySpec: "SYMMETRIC_DEFAULT"
+      Enabled: true
+      EnableKeyRotation: true
+      KeyUsage: "ENCRYPT_DECRYPT"
+      Tags: []
+  LogsLogStream20250921LATEST1eaff219f6264d199157002a5e75c52f:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]1eaff219f6264d199157002a5e75c52f"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LogsLogStream20250921LATEST3a50ffeb3c324b0191265bddd7885fc9:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]3a50ffeb3c324b0191265bddd7885fc9"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  KMSKeyX0:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::KMS::Key"
+    DeletionPolicy: "Retain"
+    Properties:
+      Origin: "AWS_KMS"
+      MultiRegion: false
+      Description: "Default key that protects my Lambda functions when no other key\
+        \ is defined"
+      KeyPolicy:
+        Version: "2012-10-17"
+        Statement:
+        - Condition:
+            StringEquals:
+              kms:ViaService: "lambda.us-east-1.amazonaws.com"
+              kms:CallerAccount: "755453698877"
+          Resource: "*"
+          Action:
+          - "kms:Encrypt"
+          - "kms:Decrypt"
+          - "kms:ReEncrypt*"
+          - "kms:GenerateDataKey*"
+          - "kms:CreateGrant"
+          - "kms:DescribeKey"
+          Effect: "Allow"
+          Principal:
+            AWS: "*"
+          Sid: "Allow access through AWS Lambda for all principals in the account\
+            \ that are authorized to use AWS Lambda"
+        - Resource: "*"
+          Action:
+          - "kms:Describe*"
+          - "kms:Get*"
+          - "kms:List*"
+          - "kms:RevokeGrant"
+          Effect: "Allow"
+          Principal:
+            AWS: "arn:aws:iam::755453698877:root"
+          Sid: "Allow direct access to key metadata to the account"
+        Id: "auto-awslambda"
+      KeySpec: "SYMMETRIC_DEFAULT"
+      Enabled: true
+      EnableKeyRotation: true
+      KeyUsage: "ENCRYPT_DECRYPT"
+      Tags: []
+  LogsLogStream20250921LATEST6991e4cbe3e244acb3b01f7d2b6d7ac4:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]6991e4cbe3e244acb3b01f7d2b6d7ac4"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdatwitterAPIProcessor"
+  AmplifyAppAppsd2qsgh5bqbftjf:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Amplify::App"
+    DeletionPolicy: "Retain"
+    Properties:
+      Repository: "https://github.com/fieqah-faisal/rescuties"
+      EnvironmentVariables:
+      - Value: "d2qsgh5bqbftjf"
+        Name: "APP_ID"
+      - Value: "AKIA27ZEMUM6XCJG2WWL"
+        Name: "VITE_AWS_ACCESS_KEY_ID"
+      - Value: "us-east-1"
+        Name: "VITE_AWS_REGION"
+      - Value: "K47iOR86vLqhH+vPR6g2ZO/yCl1a/iuTE7kV3TXJ"
+        Name: "VITE_AWS_SECRET_ACCESS_KEY"
+      - Value: "AIzaSyBu-UNEa8eFFzyBNpFK5V1xn7vEIO28reA"
+        Name: "VITE_GOOGLE_MAPS_API_KEY"
+      - Value: "arn:aws:sns:us-east-1:755453698877:DisasterAlertsMY"
+        Name: "VITE_SNS_TOPIC_ARN"
+      Platform: "WEB"
+      EnableBranchAutoDeletion: false
+      BuildSpec: "version: 1\nfrontend:\n  phases:\n    preBuild:\n      commands:\n\
+        \        - npm ci --cache .npm --prefer-offline\n    build:\n      commands:\n\
+        \        - npm run build\n  artifacts:\n    baseDirectory: dist\n    files:\n\
+        \      - '**/*'\n  cache:\n    paths:\n      - .npm/**/*\n"
+      CustomRules:
+      - Status: "404-200"
+        Target: "/index.html"
+        Source: "/<*>"
+      CacheConfig:
+        Type: "AMPLIFY_MANAGED_NO_COOKIES"
+      JobConfig:
+        BuildComputeType: "STANDARD_8GB"
+      CustomHeaders: ""
+      Name: "rescuties"
+  LogsLogStream20250921LATESTf012a8fb47154d89811ae64b0c7c54b3:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]f012a8fb47154d89811ae64b0c7c54b3"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaKinesisToSNS"
+  LambdaFunctionKinesisToSNS:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "kinesis_lambda.lambda_handler"
+      Code:
+        S3ObjectVersion:
+          Ref: "LambdaFunctionKinesisToSNSCodeS3ObjectVersioneMhVr"
+        S3Bucket:
+          Ref: "LambdaFunctionKinesisToSNSCodeS3BucketAJSrk"
+        ZipFile:
+          Ref: "LambdaFunctionKinesisToSNSCodeZipFilerMNZ8"
+        ImageUri:
+          Ref: "LambdaFunctionKinesisToSNSCodeImageUribwKr3"
+        S3Key:
+          Ref: "LambdaFunctionKinesisToSNSCodeS3KeyAEFnF"
+      Role:
+        Fn::GetAtt:
+        - "IAMRoleLambdakinesissnsrole"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "KinesisToSNS"
+      Runtime: "python3.13"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/KinesisToSNS"
+      RecursiveLoop: "Terminate"
+      Environment:
+        Variables:
+          USE_AWS: "true"
+          BEDROCK_MODEL_ID: "amazon.nova-micro-v1:0"
+          SNS_TOPIC_ARN: "arn:aws:sns:us-east-1:755453698877:DisasterAlertsMY"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  LogsLogStream20250921LATEST05b0d211099543129d4aa1b92e998e95:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]05b0d211099543129d4aa1b92e998e95"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250920LATEST68261b475fdf4898889362a68766857b:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/20/[$LATEST]68261b475fdf4898889362a68766857b"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  LogsLogStream20250921LATESTa4b4b6f6151f42738b9ba0c2d6ad3f42:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/09/21/[$LATEST]a4b4b6f6151f42738b9ba0c2d6ad3f42"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaRescutiesComprehendProcessorr"
+  IAMRoleAWSServiceRoleForSupport:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/support.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForSupport"
+      Description: "Enables resource access for AWS to provide billing, administrative\
+        \ and support services"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "support.amazonaws.com"

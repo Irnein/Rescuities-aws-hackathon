@@ -1,0 +1,125 @@
+BEDROCK & COMPREHEND & IAM JSON
+
+bedrock model used: NOVA MICRO. Model ID: amazon.nova-micro-v1:0
+
+
+
+ROLE: POLICY: JSON (custom only)
+ec2-kinesis-full-access: AmazonKinesisFullAccess
+
+
+fetch-twitter-API-role-j028wgro: AWSLambdaBasicExecutionRole : aws managed json
+
+AWSLambdaBasicExecutionRole-1a8313c2-71e3-4834-9f0c-0ea240d5fb9a:
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "arn:aws:logs:us-east-1:755453698877:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:755453698877:log-group:/aws/lambda/fetch-twitter-API:*"
+            ]
+        }
+    ]
+}
+
+
+
+lambda-kinesis-sns-role: AmazonSNSFullAccess
+AWSLambdaBasicExecutionRole
+LambdaKinesisSNSPolicy: 
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "CloudWatchLogs",
+			"Effect": "Allow",
+			"Action": [
+				"logs:CreateLogGroup",
+				"logs:CreateLogStream",
+				"logs:PutLogEvents"
+			],
+			"Resource": "arn:aws:logs:*:*:*"
+		},
+		{
+			"Sid": "PublishToSNS",
+			"Effect": "Allow",
+			"Action": [
+				"sns:Publish"
+			],
+			"Resource": [
+				"arn:aws:sns:us-east-1:755453698877:DisasterAlertsMY",
+				"arn:aws:sns:us-east-1:755453698877:*"
+			]
+		},
+		{
+			"Sid": "ComprehendCalls",
+			"Effect": "Allow",
+			"Action": [
+				"comprehend:DetectSentiment",
+				"comprehend:DetectEntities",
+				"comprehend:DetectKeyPhrases",
+				"comprehend:DetectPiiEntities"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "BedrockInvoke",
+			"Effect": "Allow",
+			"Action": [
+				"bedrock:InvokeModel"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "KinesisOptional",
+			"Effect": "Allow",
+			"Action": [
+				"kinesis:DescribeStream",
+				"kinesis:GetShardIterator",
+				"kinesis:GetRecords",
+				"kinesis:ListShards"
+			],
+			"Resource": "arn:aws:kinesis:us-east-1:755453698877:stream/*"
+		}
+	]
+}
+
+RescutiesComprehendProcessor-role-ejh8fm2f
+AmazonBedrockFullAccess
+AmazonSNSFullAccess
+ComprehendFullAccess
+AWSLambdaBasicExecutionRole-5465bfac-61b7-4778-94e4-f1b7fddc00a3: 
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "arn:aws:logs:ap-southeast-1:755453698877:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:ap-southeast-1:755453698877:log-group:/aws/lambda/RescutiesComprehendProcessor:*"
+            ]
+        }
+    ]
+}
+arn: arn:aws:iam::755453698877:policy/service-role/AWSLambdaBasicExecutionRole-5465bfac-61b7-4778-94e4-f1b7fddc00a3
+
+

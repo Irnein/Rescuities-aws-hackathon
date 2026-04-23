@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'CloudFormation template for Hackathon Project'
+
+Parameters:
+  ProjectName:
+    Type: String
+    Default: my-hackathon-project
+
+Resources:
+  # This is a simple placeholder resource that will create successfully
+  DummyResource:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub ${ProjectName}-dummy-bucket
+
+Outputs:
+  StackName:
+    Description: "Stack Name"
+    Value: !Ref AWS::StackName
